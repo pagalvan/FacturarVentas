@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class ProductoService : IService<Producto>
+    public class ProductoService : IService<Producto>, IProductoService
     {
         private readonly ProductoRepository repoProducto;
 

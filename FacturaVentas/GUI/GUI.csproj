@@ -46,14 +46,53 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="ConsultaFiltradaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="ConsultaFiltradaProductos.Designer.cs">
+      <DependentUpon>ConsultaFiltradaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultarFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultarFacturas.Designer.cs">
+      <DependentUpon>FormConsultarFacturas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCrearFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCrearFactura.Designer.cs">
+      <DependentUpon>FormCrearFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGestionProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGestionProductos.Designer.cs">
+      <DependentUpon>FormGestionProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ConsultaFiltradaProductos.resx">
+      <DependentUpon>ConsultaFiltradaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultarFacturas.resx">
+      <DependentUpon>FormConsultarFacturas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCrearFactura.resx">
+      <DependentUpon>FormCrearFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGestionProductos.resx">
+      <DependentUpon>FormGestionProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -85,6 +124,9 @@
       <Project>{9b0bde32-5498-4ee9-a7b8-927cc8793e7e}</Project>
       <Name>ENTITY</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

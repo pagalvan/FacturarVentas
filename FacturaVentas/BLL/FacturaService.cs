@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BLL
 {
-    public class FacturaService : IService<Factura>
+    public class FacturaService : IService<Factura>, IFacturaService
     {
         private readonly FacturaRepository repoFactura;
         private readonly ProductoService productoService;
